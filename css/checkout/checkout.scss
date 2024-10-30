@@ -1,0 +1,110 @@
+@import "elements";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: white !important;
+  font-family: $avenir;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: $gray;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-family: $avenir;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
+p, a, input, textarea {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.woocommerce-error {
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 10px;
+  color: red;
+  list-style: none;
+}
+
+input[type=text],
+input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid $gray;
+}
+
+input[type=submit],
+a.button {
+  background: #111 !important;
+  color: white !important;
+}
+
+textarea {
+  border: 1px solid $gray;
+}
+
+:focus {
+  outline: none;
+}
+
+/* WC 3.4 compatibility */
+.checkout-area form.checkout.woocommerce-checkout .woocommerce-billing-fields__field-wrapper label span.optional,
+.checkout-area form.checkout.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper label span.optional{
+  display: none;
+  visibility: hidden;
+}
+/* end WC 3.4 compatibility */
+
+@import "general";
+@import "desktop";
+@import "spinner";
+
+
+/* Hide possible elemens added by theme */
+header,
+.header,
+.widget-area,
+.woocommerce-breadcrumb,
+nav,
+.nav,
+footer,
+.footer {
+  display: none !important;
+}
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}

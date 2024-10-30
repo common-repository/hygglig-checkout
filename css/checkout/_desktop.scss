@@ -1,0 +1,41 @@
+@media only screen and (min-width: 600px) {
+/*  html {
+    font-size: 75% !important;
+  }
+*/
+  section {
+    margin: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+/*  html {
+    font-size: 80% !important;
+  }
+*/
+  section {
+    margin: 40px 20px;
+  }
+
+  section#hco-contents {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+  #hygglig-viewport {
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+
+  #hygglig-cart {
+    float: left;
+    width: 60%;
+  }
+
+  #hygglig-frame {
+    float: right;
+    width: 40%;
+  }
+}
+
+

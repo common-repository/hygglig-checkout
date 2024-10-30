@@ -1,0 +1,250 @@
+#back-to-shop {
+  position: relative;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ACB2B8;
+  margin: 0;
+
+  .back-link {
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 0.6rem);
+  }
+
+  .logo-holder {
+    text-align: center;
+
+    * {
+      text-align: center;
+    }
+
+    img {
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+section {
+  position: relative;
+  margin: 40px 20px;
+  padding: 20px;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  text-align: center;
+
+  * {
+    text-align: left;
+  }
+
+  input[type=submit] {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 25px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    background: white;
+    padding: 5px 10px;
+    margin: -3.3rem auto 0 auto !important;
+    display: table;
+  }
+
+  .mini_cart_item {
+    position: relative;
+    border-bottom: 1px solid $gray;
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    .remove {
+      position: absolute;
+      right: 0;
+      top: 20px;
+      font-size: 16px !important;
+      line-height: 16px;
+      color: $gray !important;
+    }
+
+    a:not(.remove) {
+      display: flex;
+    }
+
+    &:first-child {
+      padding-top: 0;
+      .remove {
+        top: 0;
+      }
+    }
+
+    .cart-item-thumb {
+      max-width: 40%;
+
+      img {
+        width: 150px;
+        height: auto;
+        max-width: 100%;
+      }
+    }
+
+    .cart-item-info {
+      color: $black !important;
+      text-align: left;
+      margin-left: 10px;
+
+      dl.variation {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        dt,
+        dd {
+          flex-basis: 50%;
+        }
+
+        dd {
+          text-align: right;
+          -webkit-margin-start: 0;
+
+          * {
+            text-align: right;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .quantity {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+
+      input {
+        width: 50px;
+        text-align: right;
+        padding: 5px 10px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  #hco-shipping-selector {
+    padding: 10px 0;
+  }
+
+  #shipping_method {
+    color: #000;
+
+    li {
+      height: 1.0rem;
+      display: table;
+      width: 100%;
+      margin: 5px 0;
+
+      input {
+        display: table-cell;
+      }
+
+      label {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+
+        > * {
+          display: table-cell;
+          width: 100%;
+          white-space: nowrap;
+        }
+
+        > :last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  #hygglig-checkout-shipping-selector {
+    padding: 10px 0;
+    border-bottom: 1px solid $gray;
+  }
+
+  .cart-discount {
+    input[type=text] {
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+    }
+  }
+
+  .woocommerce-mini-cart__total {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+
+    .table-text,
+    .table-value {
+      flex-basis: 50%;
+    }
+
+    .table-value {
+      text-align: right;
+      color: #000;
+      font-size: 1.4rem;
+    }
+  }
+
+  .cart-discount {
+    padding-top: 10px;
+  }
+
+  &#woocommerce-order-comments {
+    p:first-of-type {
+      margin-top: 15px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}
+
+section#hco-contents {
+  border: none;
+  padding: 0;
+  margin-top: 80px;
+}
+
+#hyggligiframe iframe {
+  min-height: 400px;
+}
+
+#hygglig_block {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  left: 0;
+}

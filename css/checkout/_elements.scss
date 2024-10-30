@@ -1,0 +1,29 @@
+$gray: #ACB2B8;
+$black: #333333;
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/AvenirLTStd-Book.eot');
+  src: url('../fonts/avenir/AvenirLTStd-Book.woff2') format('woff2'),
+  url('../fonts/avenir/AvenirLTStd-Book.woff') format('woff'),
+  url('../fonts/avenir/AvenirLTStd-Book.ttf') format('truetype'),
+  url('../fonts/avenir/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg'),
+  url('../fonts/avenir/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Regular.eot');
+  src: url('../fonts/lato/Lato-Regular.woff2') format('woff2'),
+  url('../fonts/lato/Lato-Regular.woff') format('woff'),
+  url('../fonts/lato/Lato-Regular.ttf') format('truetype'),
+  url('../fonts/lato/Lato-Regular.svg#Lato-Regular') format('svg'),
+  url('../fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$avenir: 'Avenir', sans-serif;
+$lato: 'Lato', sans-serif;
+
